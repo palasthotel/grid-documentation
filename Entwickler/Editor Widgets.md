@@ -9,6 +9,7 @@ Die Editor Widgets sind zu finden unter `wp-content/plugins/grid-wordpress/lib/j
 ###Liste möglicher Editor Widgets
 + `autocomplete`: Textfeld mit Autocomplete. Autocomplete benötigt eine eigens geschriebene Funktion "performElementSearch", die ihm Inhalte liefert.
 + `autocomplete_with_links`:  Textfeld mit Autocomplete. Liefert Autocompletes  als Links. Autocomplete benötigt eine eigens geschriebene Funktion "performElementSearch", die ihm Inhalte liefert.
++ `m-autoselect`: Textfeld mit Multi-Autocomplete. Es können mehrere Elemente hinzugefügt werden. Die Syntax funktioniert wie die des herkömmlichen Autocompletes. Autocomplete benötigt eine eigens geschriebene Funktion "performElementSearch", die ihm Inhalte liefert.
 + `checkbox`: Checkbox mit Beschriftung.
 + `file`: Ermöglicht Datei-Upload.
 + `hidden`: Textfeld, das weder im Back- noch im Frontend gerendert wird. Dient lediglich zur Übermittlung interner Daten.
