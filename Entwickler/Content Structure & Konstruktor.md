@@ -26,7 +26,7 @@ Neben dem *Key* benötigt jeder Eintrag noch ein *Label*, einen *Typ* und unter 
 
 public function __construct() {
 	$this->content = new Stdclass;					//Pflichtfeld
-	$this->content->internName1 = Startwert;			//Setzt Startwert für EditorWidget
+	$this->content->internName1 = Startwert1;			//Setzt Startwert für EditorWidget
 	$this->content->internName2 = Startwert2;
 	.
 	.
