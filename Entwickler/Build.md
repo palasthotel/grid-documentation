@@ -14,7 +14,8 @@ public function build($editmode) {
 	}
 	else {
 		insert function syntax here;					//Frontend
-		// 1. Entweder können die Inhaltswerte als Array oder Variable an die template datei zur weiteren Verarbeitung übergeben werden
+		// 1. Entweder können die Inhaltswerte als Array oder 
+		//    Variable an die template datei zur weiteren Verarbeitung übergeben werden
 		// 2. Oder ein String der das gerenderte HTML enthält
 		return $this->content || $htmloutputstring
 	}
