@@ -41,14 +41,14 @@ public function __construct() {
 
 public function contentStructure() {
 	return array(
-		array('key' => 'internName',		// Bezeichnung wie im Konstruktor
-			'label' => 'shownName',		//Beliebiger Name, sollte beschreibend sein
-			'select' => 'editorWidget',		//Siehe "Editor Widgets" für eine 
+		array('key' => 'internName1',		// Bezeichnung wie im Konstruktor
+			'label' => 'shownName1',		//Beliebiger Name, sollte beschreibend sein
+			'type' => 'editorWidget',		//Siehe "Editor Widgets" für eine 
 												komplette Liste der verfügbaren Typen
 		),
-		array('key' => 'internName',
-			'label' => 'shownName',
-			'select' => 'editorWidget',
+		array('key' => 'internName2',
+			'label' => 'shownName2',
+			'type' => 'editorWidget',
 		),
 		.
 		.
