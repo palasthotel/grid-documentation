@@ -11,17 +11,15 @@ Name | Interne Bezeichnung | Zweck
 Title | `$title` | Titel der Box
 Title-URL | `$titleurl` | Optionaler Titel-Link
 Prolog | `$prolog` | Prolog Textareal
-Content | `$content` | Primärer Inhalt
+Content | `$content` | Inhalte der Editorwidgets
 Epilog | `$epilog` | Epilog Textareal
 Style | `$style` | Von der Box verwendeter Style
 Readmore | `$readmore` | *Read more* Text
 Readmore-URL | `$readmoreurl` |  Optionaler Link für den *read more* Text
 
-<br />
 Neben dem *Key* benötigt jeder Eintrag noch ein *Label*, einen *Typ* und unter Umständen einen *Typ Zusatz*. Das Label ist dabei lediglich die Überschrift des entsprechenden Feldes im Edit Modus. Der Typ bestimmt, welche Form von Input das Feld besitzt, wobei manche Typen, wie zB. *select* einen Zusatz benötigen. Für eine vollständige Liste von *Editor Widgets* siehe "Editor Widgets".
-<br />
-<br />
-##Syntax des Box-Konstruktors#
+
+##Syntax des Box-Konstruktors
 <pre>
 
 public function __construct() {
@@ -35,7 +33,6 @@ public function __construct() {
 
 </pre>
 
-<br />
 ##Syntax der Content Structure
 <pre>
 

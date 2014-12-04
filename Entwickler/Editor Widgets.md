@@ -5,26 +5,32 @@
 Eine Box kann mit verschiedenen Formen von Inhalten gefüllt werden. In der *Content Structure*-Funktion (siehe "Content Structure & Konstruktor") wird festgelegt, welche Typen von Inhalt im Editmodus zur Verfügung stehen. Die einzelnen Input Typen nennen sich "Editor Widgets". <br />
 Die Editor Widgets sind zu finden unter `wp-content/plugins/grid-wordpress/lib/js/app/views/EditorWidgets`.
 
-<br />
+Grundsätzlich
+
 ###Liste möglicher Editor Widgets
-+ `autocomplete`: Textfeld mit Autocomplete. Autocomplete benötigt eine eigens geschriebene Funktion "performElementSearch", die ihm Inhalte liefert.
-+ `autocomplete_with_links`:  Textfeld mit Autocomplete. Liefert Autocompletes  als Links. Autocomplete benötigt eine eigens geschriebene Funktion "performElementSearch", die ihm Inhalte liefert.
-+ `m-autoselect`: Textfeld mit Multi-Autocomplete. Es können mehrere Elemente hinzugefügt werden. Die Syntax funktioniert wie die des herkömmlichen Autocompletes. Autocomplete benötigt eine eigens geschriebene Funktion "performElementSearch", die ihm Inhalte liefert.
++ `text`: Einfaches Textfeld, gibt Text 1:1 aus.
++ `number`: Textfeld, dass nur Zahlen (int & float) akzeptiert. Kann per Klick um 1 erhöht/erniedrigt werden.
++ `textarea`: Skalierbares Textareal, gibt Text 1:1 aus.
 + `checkbox`: Checkbox mit Beschriftung.
-+ `file`: Ermöglicht Datei-Upload.
-+ `hidden`: Textfeld, das weder im Back- noch im Frontend gerendert wird. Dient lediglich zur Übermittlung interner Daten.
++ `select`: Dropdown Menü, benötigt den Zusatz `selections`, der mit einem Array gefüllt wird. *Select* bietet den Inhalt dieses Arrays zur Auswahl an.
 + `html`: Textareal, das html interpretiert und ausgibt.
 + `info`: Textfeld zur Dokumentation anderer Felder. Benötigt `value`.
++ `hidden`: Textfeld, das weder im Back- noch im Frontend gerendert wird. Dient lediglich zur Übermittlung interner Daten.
 + `list`: Erzeugt Liste, benötigt als Zusatz eine eigene contentStructure.
-+ `number`: Textfeld, dass nur Zahlen (int & float) akzeptiert. Kann per Klick um 1 erhöht/erniedrigt werden.
-+ `select`: Dropdown Menü, benötigt den Zusatz `selections`, der mit einem Array gefüllt wird. *Select* bietet den Inhalt dieses Arrays zur Auswahl an.
-+ `text`: Einfaches Textfeld, gibt Text 1:1 aus.
-+ `textarea`: Skalierbares Textareal, gibt Text 1:1 aus.
-+ `wp_mediaselect`: Ermöglicht die Auswahl von Dateien aus der Wordpress Mediathek. Nur in Wordpress enthalten.
++ `file`: Ermöglicht Datei-Upload.
++ `wp-mediaselect`: Ermöglicht die Auswahl von Dateien aus der Wordpress Mediathek. Nur in Wordpress enthalten.
++ `autocomplete`: Textfeld mit Autocomplete. Autocomplete benötigt eine eigens geschriebene Funktion "performElementSearch", die ihm Inhalte liefert.
++ `autocomplete-with-links`:  Textfeld mit Autocomplete. Liefert Autocompletes  als Links. Autocomplete benötigt eine eigens geschriebene Funktion "performElementSearch", die ihm Inhalte liefert.
++ `multi-autocomplete`: Textfeld mit Multi-Autocomplete. Es können mehrere Elemente hinzugefügt werden. Die Syntax funktioniert wie die des herkömmlichen Autocompletes. Autocomplete benötigt eine eigens geschriebene Funktion "performElementSearch", die ihm Inhalte liefert.
+
+<br>
 
 ##In detail
 
 ---
+
+### Text
+Text ist ein simples Texteingabefeld.
 
 ###Autocomplete
 Das Autocomplete-Widget führt für jede neue Eingabe *performElementSearch* aus, das ihm ein Array aus Keys mit zugehörigen Values an das Javascript liefert. performElementSearch muss selbst programmiert werden, damit Autocomplete weiß, wo es wonach suchen soll. Desweiteren benötigt das Widget die *getElementValue*-Funktion, die später mithilfe des durch getElementSearch gespeicherten Keys (=id) diesem wieder seinen Titel zuweisen kann.

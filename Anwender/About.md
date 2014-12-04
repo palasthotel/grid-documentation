@@ -5,7 +5,7 @@
 
 ###Was ist Grid?
 
-Grid ist ein Sitebuilding Plugin, das von PALASTHOTEL speziell für den Umgang mit Wordpress und Drupal breitgestellt wird. Es handelt sich dabei um ein Open Source Projekt, das frei im Netz verfügbar ist.
+Grid ist ein Landingpage Editor, der von PALASTHOTEL für Wordpress und Drupal entwickelt wird. Er ist ein Open Source Projekt, das frei im Netz verfügbar ist.
 
 [Grid jetzt downloaden.](https://github.com/palasthotel/grid/archive/master.zip)
 
@@ -16,7 +16,7 @@ Sollte die Standardauswahl von Containern nicht ausreichen, ist es möglich, wei
 
 [Hier](https://github.com/palasthotel/grid/archive/master.zip) geht es zum Download der aktuellsten Version von Grid.
 
-<br />
+<br>
 #FAQ
 ---
 ###Wer steckt hinter Grid?
@@ -30,6 +30,7 @@ Grid ist ein Open Source Projekt, das für alle im Netz *frei* verfügbar ist un
 
 ###Was benötige ich, um Grid nutzen zu können?
 Um Grid (Wordpress) im vollen Umfang nutzen zu können, benötigt man lediglich eine Wordpress Installation der Version 3.6 oder höher.
+Um Grid (Drupal) im vollen Umfang nutzen zu können, benötigt man lediglich eine Wordpress Installation der Version 3.6 oder höher.
 
 ###Ist es möglich, Seiten noch auf dem herkömmlichen Weg aufzubauen, wenn Grid installiert ist?
 Die Verwendung von Grid ist auch nach der Installation optional und keine Pflicht.
